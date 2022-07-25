@@ -18,5 +18,10 @@ RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.d
     && wget -P model/ https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/lion.onnx \
     && wget -P model/ https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/bridge.onnx \
     && wget -P model/ https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/bedroom.onnx \
+    && wget -P model/ https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/living_room.onnx \
+    && wget -P model/ https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/conference_room.onnx \
+    && wget -P model/ https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/horse.onnx \
+    && wget -P model/ https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/dog.onnx \
+    && wget -P model/ https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/smiling_dog.onnx \
+    && wget -P model/ https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/horse_made_of_clouds.onnx \
     && wget -P model/ https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/seaplane.onnx
-#    && wget -P model/ https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/elephants_drawn_with_leaves.onnx \

@@ -10,7 +10,7 @@ from lxml import etree  # skipcq: BAN-B410 - Ignore credible sources
 
 from services.settings import logger, SynergyTunnel
 from services.utils import ToolBox
-from .core import EpicAwesomeGamer, CookieManager
+from .core import EpicAwesomeGamer, CookieManager, CAPTCHAUtils
 from .exceptions import (
     AssertTimeout,
     SwitchContext,
@@ -244,7 +244,7 @@ class GameClaimer(EpicAwesomeGamer):
                 )
                 if self.result != self.assert_.ONE_MORE_STEP:
                     break
-                if self.armor.face_the_checkbox(ctx) and self.armor.anti_checkbox(ctx):
+                if CAPTCHAUtils.face_the_checkbox(ctx) and self.challenger.anti_checkbox(ctx):
                     self._duel_with_challenge(ctx, window="oms")
                     time.sleep(5)
             else:
